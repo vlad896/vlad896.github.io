@@ -1,0 +1,395 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  line-height: 1.5;
+  max-width: 1190px;
+  margin: 0 auto;
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.heading {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: clamp(24px, 5vw, 32px);
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: #ff690d;
+}
+
+.text {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.container {
+  padding: 100px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+.btn {
+  min-width: 226px;
+  height: 54px;
+  padding: 16px 36px;
+  border-radius: 8px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.35;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.btn--primary {
+  background-color: #ff6f00;
+  color: #fff;
+  border: 2px solid transparent;
+}
+
+.btn--primary:hover {
+  background-color: #e66300;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(255, 111, 0, 0.3);
+}
+
+.btn--primary:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(255, 111, 0, 0.3);
+}
+
+.btn--secondary {
+  background-color: transparent;
+  color: #ff7a00;
+  border: 2px solid #ff7a00;
+}
+
+.btn--secondary:hover {
+  background-color: #ff7a00;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(255, 122, 0, 0.3);
+}
+
+.btn--secondary:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(255, 122, 0, 0.3);
+}
+
+.hero__image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.discount {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+}
+
+.discount__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.discount__text-block {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.discount__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.discount__image {
+  flex-shrink: 0;
+  max-width: 400px;
+}
+
+.terms {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px 0;
+}
+
+.terms__list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.terms__item {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.terms__icon {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  margin-top: 4px;
+}
+
+.guidelines {
+  display: flex;
+  gap: 16px;
+  background: linear-gradient(90deg, #d9d9d9 0%, #ffffff 100%);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.guidelines__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 32px;
+}
+
+.guidelines__title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 1.17;
+  color: #333;
+}
+
+.guidelines__list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.guidelines__item {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.guidelines__icon {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  margin-top: 4px;
+}
+
+.guidelines__text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.guidelines__image {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  padding-right: 32px;
+}
+
+.selection {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.selection__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+  flex-wrap: wrap;
+  padding: 24px 0;
+}
+
+.contact__phone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-width: 165px;
+  height: 56px;
+  border: 2px solid #ff7a00;
+  border-radius: 8px;
+  color: #ff7a00;
+  transition: all 0.3s ease;
+}
+
+.contact__phone:hover {
+  background-color: #ff7a00;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(255, 122, 0, 0.3);
+}
+
+.contact__phone:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(255, 122, 0, 0.3);
+}
+
+.contact__phone-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.contact__phone-number {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 40px 16px;
+  }
+
+  .heading {
+    font-size: 24px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+
+  .discount {
+    flex-direction: column;
+  }
+
+  .discount__image {
+    display: none;
+  }
+
+  .discount__buttons .btn {
+    width: 100%;
+  }
+
+  .guidelines {
+    flex-direction: column;
+  }
+
+  .guidelines__image {
+    display: none;
+  }
+
+  .guidelines__content {
+    padding: 24px 16px;
+  }
+
+  .guidelines__title {
+    font-size: 20px;
+  }
+
+  .selection__content {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .selection__content .btn {
+    width: 100%;
+  }
+
+  .contact {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .contact__phone {
+    width: 100%;
+  }
+
+  .contact .btn {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 24px 12px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 12px 24px;
+    height: 48px;
+  }
+
+  .contact__phone-number {
+    font-size: 28px;
+  }
+}
+
+.btn:focus-visible,
+.contact__phone:focus-visible {
+  outline: 3px solid #ff7a00;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

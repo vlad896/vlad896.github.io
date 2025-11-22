@@ -258,6 +258,27 @@ table {
   font-weight: 700;
   font-style: Bold;
 }
+.addressBtn {
+  width: 246px;
+  height: 54px;
+  opacity: 1;
+  gap: 10px;
+  border-radius: 8px;
+  padding-top: 16px;
+  padding-right: 36px;
+  padding-bottom: 16px;
+  padding-left: 36px;
+  background-color: #ff6f00;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 16px;
+  line-height: 135%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
 @media screen and (max-width: 768px) {
   .container {
     padding: 10px;
