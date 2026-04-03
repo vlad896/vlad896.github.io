@@ -1,218 +1,740 @@
-<!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
-    />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="HandheldFriendly" content="true" />
-    <title>Default Page Title</title>
-    <link rel="shortcut icon" href="favicon.ico" />
-    <link rel="icon" href="favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      type="text/javascript"
-      src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"
-    ></script>
-  </head>
+﻿<!DOCTYPE html>
+<html lang="ru" prefix="og: https://ogp.me/ns#">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bbooster — цифровая операционная система бизнеса по методологии Александра Высоцкого: цели, KPI, регламенты, обучение команды и управленческий контроль в одной среде.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://bbooster.online/">
+  <meta property="og:title" content="Bbooster — системное управление бизнесом без ручного хаоса">
+  <meta property="og:description" content="Платформа, методология, обучение и внедрение, которые помогают вывести управление из головы собственника в единую цифровую систему.">
+  <meta property="og:url" content="https://bbooster.online/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Bbooster">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:image" content="https://fs.gcfiles.net/fileservice/file/download/a/27537/sc/209/h/6a295e548618d1537e5565e7dbdc5eac.webp">
+  <meta property="og:image:alt" content="Bbooster — операционная система бизнеса">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Bbooster — системное управление бизнесом без ручного хаоса">
+  <meta name="twitter:description" content="Платформа, методология, обучение и внедрение, которые помогают вывести управление из головы собственника в единую цифровую систему.">
+  <meta name="twitter:image" content="https://fs.gcfiles.net/fileservice/file/download/a/27537/sc/209/h/6a295e548618d1537e5565e7dbdc5eac.webp">
+  <title>Bbooster — системное управление и цифровая платформа Александра Высоцкого</title>
 
-  <body>
-    <section class="container">
-      <section>
-        <img src="/img/Group 51.jpg" height="100%" width="100%" alt="sale" />
-      </section>
-      <section>
-        <div class="getDiscount">
-          <div class="getDiscountText">
-            <div>
-              <h1 class="heading">как получить скидку на фильтры?</h1>
-              <p class="text">
-                С 1 по 31 июля 2024, при покупке любого моторного масла и двух
-                или трёх и более фильтров, Вы получаете
-                <strong>скидку 10% и 15%</strong> соответсвенно на покупку
-                других фильтров <br /><br />Полный список товаров, участвующих в
-                акции, можно посмотеть ниже:
-              </p>
-            </div>
-            <div class="getDiscountBtn">
-              <button class="oilBtn">Список масел</button>
-              <button class="filterBtn">Список фильтров</button>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fs.gcfiles.net" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,500;0,6..12,700;0,6..12,800;1,6..12,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://bbooster.online/#organization",
+        "name": "Bbooster",
+        "url": "https://bbooster.online/",
+        "description": "Экосистема системного управления: платформа, обучение и внедрение методологии регулярного менеджмента.",
+        "sameAs": [
+          "https://my.bbooster.online",
+          "https://blog.bbooster.online",
+          "https://visotsky.com",
+          "https://alexvisotsky.com"
+        ],
+        "founder": {
+          "@type": "Person",
+          "name": "Александр Высоцкий",
+          "sameAs": [
+            "https://alexvisotsky.com",
+            "https://visotsky.com"
+          ]
+        }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://bbooster.online/#software",
+        "name": "Bbooster",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web",
+        "url": "https://my.bbooster.online",
+        "description": "Облачная платформа для оцифровки управления, KPI, регламентов и операционной дисциплины компании.",
+        "author": {
+          "@type": "Person",
+          "name": "Александр Высоцкий",
+          "sameAs": ["https://alexvisotsky.com", "https://visotsky.com"]
+        },
+        "publisher": { "@id": "https://bbooster.online/#organization" },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "RUB",
+          "description": "Регистрация и базовые сценарии на платформе my.bbooster.online"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://bbooster.online/#website",
+        "name": "Bbooster",
+        "url": "https://bbooster.online/",
+        "publisher": { "@id": "https://bbooster.online/#organization" },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://blog.bbooster.online/?s={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://bbooster.online/#webpage",
+        "url": "https://bbooster.online/",
+        "name": "Bbooster — системное управление и цифровая платформа Александра Высоцкого",
+        "description": "Лендинг Bbooster о диагностике, внедрении, платформе и систематизации управления бизнесом.",
+        "isPartOf": { "@id": "https://bbooster.online/#website" },
+        "about": { "@id": "https://bbooster.online/#software" },
+        "primaryImageOfPage": "https://fs.gcfiles.net/fileservice/file/download/a/27537/sc/209/h/6a295e548618d1537e5565e7dbdc5eac.webp",
+        "inLanguage": "ru-RU"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://bbooster.online/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Чем Bbooster отличается от обычной CRM?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "CRM автоматизирует процессы учета и взаимодействия. Bbooster закрывает более широкий слой: цели, KPI, роли, регламенты, обучение и управленческий контроль как единую систему."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Подойдет ли решение, если процессы уже частично описаны?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Да. В этом случае задача не начинать с нуля, а собрать разрозненные элементы в единый контур, чтобы процессы действительно работали в ежедневной практике команды."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Можно ли внедрять Bbooster поэтапно?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Да. Обычно разумнее идти поэтапно: сначала прояснить модель управления, затем перенести контроль и роли в платформу, а после закрепить систему через обучение."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Что будет главным эффектом для собственника?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Снижение зависимости бизнеса от ручного участия владельца. Решения начинают опираться на систему, а не на постоянное личное вмешательство в каждую задачу."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "С чего лучше начинать: с платформы или с диагностики?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Чаще всего правильно начинать с диагностики. Она помогает понять, где именно теряется управляемость и какой сценарий внедрения подойдет компании без лишних шагов."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Подойдет ли Bbooster, если в компании уже есть CRM или ERP?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Да. Bbooster не заменяет зрелую систему учета, а помогает связать цели, KPI, роли, регламенты и управленческий контроль в единую логику исполнения."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Сколько времени занимает запуск изменений?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Срок зависит от масштаба компании и текущей зрелости управления. Обычно сначала определяется маршрут внедрения, после чего команда двигается поэтапно: диагностика, архитектура, цифровой контур и закрепление."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">К основному содержимому</a>
+
+  <header class="site-header">
+    <div class="container">
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <div class="header__wrap">
+        <a href="https://bbooster.online/" class="logo">B<span>b</span>ooster</a>
+        <label for="nav-toggle" class="menu-btn" aria-label="Открыть меню">
+          <span class="sr-only">Открыть меню</span>
+          <span class="menu-btn__line"></span>
+          <span class="menu-btn__line"></span>
+        </label>
+        <nav class="header__nav" aria-label="Основная навигация">
+          <div class="main-menu">
+            <ul class="header__menu" role="list">
+              <li><a href="https://my.bbooster.online/program">Программа</a></li>
+              <li><a href="https://my.bbooster.online/training">Обучение</a></li>
+              <li><a href="https://blog.bbooster.online">Блог Bbooster</a></li>
+              <li><a href="https://visotsky.com" rel="noopener">Методология Visotsky</a></li>
+            </ul>
+            <div class="header__cta">
+              <a href="https://my.bbooster.online" class="btn btn--primary btn--sm">Войти в Bbooster</a>
             </div>
           </div>
-          <div class="getDiscountImg">
-            <img
-              src="/img/Group 178056881.jpg"
-              alt="helix ultra"
-              height="auto"
-              width="auto"
-            />
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero hero--revamp" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="hero-card hero-card--split">
+          <div class="hero__grid hero__grid--split">
+            <div class="hero__content hero__content--wide">
+              <p class="hero__eyebrow">Операционная система бизнеса</p>
+              <p class="hero__overline">Диагностика, внедрение и цифровой контур управления в одной системе</p>
+              <h1 id="hero-title" class="hero__title hero__title--revamp">Bbooster помогает собственнику выстроить управляемую систему бизнеса, а не усиливать ручной режим новым софтом.</h1>
+              <p class="hero__snippet hero__snippet--revamp">
+                Сначала мы помогаем понять, где именно компания теряет управляемость, затем собираем логику целей, KPI, ролей и регламентов и закрепляем ее в цифровой среде. Поэтому первый правильный шаг для большинства компаний здесь — не регистрация, а диагностика и маршрут внедрения.
+              </p>
+              <div class="hero__offer" role="list" aria-label="Что получает компания на старте">
+                <span class="hero__offer-item">Диагностика управленческих разрывов</span>
+                <span class="hero__offer-item">Маршрут внедрения под структуру компании</span>
+                <span class="hero__offer-item">Платформа для KPI, ролей и регламентов</span>
+              </div>
+              <div class="hero__actions hero__actions--revamp">
+                <a class="btn btn--primary" href="https://my.bbooster.online/program">Пройти диагностику и получить план внедрения</a>
+                <a class="btn btn--secondary" href="https://my.bbooster.online">Посмотреть платформу</a>
+              </div>
+            </div>
+            <div class="hero__visual hero__visual--split">
+              <img src="https://fs.gcfiles.net/fileservice/file/download/a/27537/sc/209/h/6a295e548618d1537e5565e7dbdc5eac.webp" width="580" height="420" alt="Bbooster: визуальный образ операционной системы бизнеса" loading="eager" decoding="async">
+            </div>
           </div>
         </div>
-      </section>
-      <section class="termsSection">
-        <h2 class="heading">Условия акции</h2>
-        <div class="containerCheck">
-          <div class="divCheck">
-            <img
-              src="/img/i.sproit-icon__check-circle_mask-group.png"
-              alt="check"
-              height="24px"
-              width="24px"
-            />
-            <p class="text">
-              Акция действую с <strong>1 по 31 июля 2024</strong> года во всех
-              магазинах ARMTEK;
-            </p>
-          </div>
-          <div class="divCheck">
-            <img
-              src="/img/i.sproit-icon__check-circle_mask-group.png"
-              alt="check"
-              height="24px"
-              width="24px"
-            />
-            <p class="text">
-              В акции участвуют только <strong>физические лица;</strong>
-            </p>
-          </div>
-          <div class="divCheck">
-            <img
-              src="/img/i.sproit-icon__check-circle_mask-group.png"
-              alt="check"
-              height="24px"
-              width="24px"
-            />
-            <p class="text">
-              В акции участвуют товары, находящиеся <strong>в наиличии;</strong>
-            </p>
-          </div>
-        </div>
-      </section>
-      <section class="exploitationSection">
-        <div class="exploitationContainer">
-          <p class="exploitationContainerP">
-            При эксплуатации стяжных ремней следует соблюдать следующие
-            требования и правила:
-          </p>
-          <div class="exploitationCkeckConteiner">
-            <div class="divCheck">
-              <img
-                src="/img/check1.png"
-                alt="check"
-                height="16px"
-                width="16px"
-              />
-              <p class="explotirationText">
-                Размещать ремни над грузом следует как можно равномернее.
-              </p>
-            </div>
-            <div class="divCheck">
-              <img
-                src="/img/check1.png"
-                alt="check"
-                height="16px"
-                width="16px"
-              />
-              <p class="explotirationText">
-                Нагрузка на ремни не должна превышать допустимый максимум.
-              </p>
-            </div>
-            <div class="divCheck">
-              <img
-                src="/img/check1.png"
-                alt="check"
-                height="16px"
-                width="16px"
-              />
-              <p class="explotirationText">
-                Запрещено делать на ременной ленте какие-либо узлы.
-              </p>
-            </div>
-            <div class="divCheck">
-              <img
-                src="/img/check1.png"
-                alt="check"
-                height="16px"
-                width="16px"
-              />
-              <p class="explotirationText">
-                Нельзя натягивать ремни на острую поверхность объекта.
-              </p>
-            </div>
-            <div class="divCheck">
-              <img
-                src="/img/check1.png"
-                alt="check"
-                height="16px"
-                width="16px"
-              />
-              <p class="explotirationText">
-                При установке ремней нужно следить за тем, чтобы они не
-                перекрутились и максимально обхватывали объект.
-              </p>
-            </div>
-            <div class="divCheck">
-              <img
-                src="/img/check1.png"
-                alt="check"
-                height="16px"
-                width="16px"
-              />
-              <p class="explotirationText">
-                Ни в коем случае посредством ремней нельзя поднимать груз, а
-                следует использовать строго по назначению, т. е. для крепежа.
-              </p>
-            </div>
-            <div class="divCheck">
-              <img
-                src="/img/check1.png"
-                alt="check"
-                height="16px"
-                width="16px"
-              />
-              <p class="explotirationText">
-                Перед использованием ремней обязательно нужно проверять их на
-                предмет повреждений и деформаций.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="explotirationImg">
-          <img src="/img/f.png" alt="f" height="auto" width="auto" />
-        </div>
-      </section>
-      <section class="ruleSection">
-        <h2 class="heading">
-          Как правильно подобрать масло и фильтр для своего авто?
-        </h2>
-        <div class="divRuleSection">
-          <p class="text">
-            Подобрать моторное масло онлайн и оформить заказ можно в нашем
-            сервисе подбора запчастей:
-          </p>
-          <button class="onlineBtn">Подобрать online</button>
-        </div>
-      </section>
-      <section>
-        <hr />
-      </section>
-      <section class="addressSection">
-        <a class="addressSectionLink" href="tel:7600">
-          <img src="/img/Vector.png" alt="phone" />
-          <span class="spanAdress">7600</span>
-        </a>
-        <button class="addressBtn">адреса магазинов</button>
-      </section>
+      </div>
     </section>
-  </body>
+
+    <section class="ecosystem ecosystem--revamp" aria-labelledby="ecosystem-title">
+      <h2 id="ecosystem-title" class="sr-only">Основание доверия к экосистеме Bbooster</h2>
+      <div class="container">
+        <div class="ecosystem__row ecosystem__row--revamp">
+          <a href="https://visotsky.com" class="ecosystem__logo-link" rel="noopener">
+            <span>Visotsky</span>
+            <small>Методология и консалтинг</small>
+          </a>
+          <a href="https://alexvisotsky.com" class="ecosystem__logo-link" rel="noopener">
+            <span>Alexander Vysotsky</span>
+            <small>Экспертная школа управления</small>
+          </a>
+          <a href="https://my.bbooster.online" class="ecosystem__logo-link">
+            <span>my.bbooster.online</span>
+            <small>Цифровая среда внедрения</small>
+          </a>
+          <a href="https://blog.bbooster.online" class="ecosystem__logo-link">
+            <span>blog.bbooster.online</span>
+            <small>Кейсы и статьи по внедрению</small>
+          </a>
+        </div>
+        <p class="ecosystem__text">
+          Bbooster связывает <a href="https://visotsky.com" rel="noopener">методологию системного управления Visotsky</a>, цифровую платформу, обучение команды и ежедневную практику внедрения в единый рабочий контур. За счет этого компания получает не отдельный сервис и не набор разрозненных инструментов, а целостную систему, которая помогает навести порядок в целях, KPI, ролях, регламентах и управленческом контроле. Такой подход особенно важен в момент роста, когда ручной режим перестает справляться с масштабом бизнеса. Чтобы глубже понять саму логику внедрения, разобрать реальные кейсы, управленческие ситуации и практические сценарии перехода к системной модели, можно использовать <a href="https://blog.bbooster.online">блог Bbooster со статьями и примерами внедрения</a>.
+        </p>
+      </div>
+    </section>
+
+    <section class="about-company" aria-labelledby="about-company-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-kicker">О компании</p>
+          <h2 id="about-company-title" class="section-title">Bbooster развивает международную экосистему системного управления для владельцев и управленческих команд</h2>
+          <p class="section-lead">Этот блок усиливает доверие не общими словами, а конкретными масштабами: команда, экспертиза, география, действующие внедрения и накопленный опыт в разных отраслях.</p>
+        </div>
+        <div class="about-company__layout">
+          <ul class="about-company__list" role="list">
+            <li class="about-company__item">
+              <div class="about-company__num">200+</div>
+              <p class="about-company__text">специалистов работают в международной структуре Bbooster, включая команды в США, Европе и Азии</p>
+            </li>
+            <li class="about-company__item">
+              <div class="about-company__num">28</div>
+              <p class="about-company__text">сертифицированных бизнес-инженеров ведут проекты после длительной подготовки и внутренней аттестации</p>
+            </li>
+            <li class="about-company__item">
+              <div class="about-company__num">20+</div>
+              <p class="about-company__text">международных бизнес-туров, встреч и профильных событий проведено для собственников с 2013 года</p>
+            </li>
+            <li class="about-company__item">
+              <div class="about-company__num">432</div>
+              <p class="about-company__text">компании уже проходят программу систематизации и внедряют управленческие инструменты прямо сейчас</p>
+            </li>
+            <li class="about-company__item">
+              <div class="about-company__num">250+</div>
+              <p class="about-company__text">ниш и отраслей получили практическое внедрение управленческих решений с 2009 года</p>
+            </li>
+          </ul>
+          <div class="about-company__media">
+            <img src="https://fs.gcfiles.net/fileservice/file/download/a/27537/sc/235/h/43c6b94ecef007c79192ee4d0010c7bd.webp" srcset="https://fs.gcfiles.net/fileservice/file/download/a/27537/sc/19/h/5bd72186fc0f98b74e7c337913371726.webp 2x" alt="Команда Business Booster" loading="lazy" decoding="async">
+          </div>
+        </div>
+        <p class="about-company__note">Цифры на этой странице описывают масштаб экосистемы Bbooster и связанных программ внедрения, чтобы пользователь видел не абстрактное обещание, а контекст реальной операционной практики.</p>
+      </div>
+    </section>
+
+    <section class="audience" aria-labelledby="audience-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-kicker">Для кого это</p>
+          <h2 id="audience-title" class="section-title">Bbooster нужен тем, кто уже вырос из ручного режима управления</h2>
+          <p class="section-lead">Если решения все еще держатся на владельце, а регламенты и KPI не работают как единая система, лендинг должен сразу показать: проблема не в количестве задач, а в архитектуре управления.</p>
+        </div>
+        <div class="audience__grid">
+          <article class="audience-card">
+            <h3>Собственники</h3>
+            <p>Которые устали быть главным диспетчером бизнеса и последней инстанцией по каждому вопросу.</p>
+            <ul class="card-points" role="list">
+              <li>слишком много решений завязано лично на вас</li>
+              <li>рост компании увеличивает хаос, а не ясность</li>
+            </ul>
+          </article>
+          <article class="audience-card">
+            <h3>Операционные руководители</h3>
+            <p>Которым нужна не новая отчетность, а единая среда исполнения, ролей и контроля.</p>
+            <ul class="card-points" role="list">
+              <li>команда работает по-разному в разных отделах</li>
+              <li>регламенты не совпадают с реальной практикой</li>
+            </ul>
+          </article>
+          <article class="audience-card">
+            <h3>Команды роста</h3>
+            <p>Которым важно масштабироваться без потери прозрачности, дисциплины и качества управления.</p>
+            <ul class="card-points" role="list">
+              <li>новые сотрудники долго входят в систему</li>
+              <li>масштабирование размывает ответственность</li>
+            </ul>
+          </article>
+        </div>
+        <div class="pain-strip" role="list" aria-label="Типовые управленческие симптомы">
+          <span class="pain-chip">совещаний больше, ясности меньше</span>
+          <span class="pain-chip">KPI не связаны с ежедневной работой</span>
+          <span class="pain-chip">контроль держится на чатах и напоминаниях</span>
+          <span class="pain-chip">рост усиливает ручной режим</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="transform transform--revamp" aria-labelledby="transform-title">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <p class="section-kicker">Точка перелома</p>
+          <h2 id="transform-title" class="section-title">Трансформация: от хаоса к системе Bbooster</h2>
+          <p class="section-lead section-lead--center">Этот блок отвечает на один ключевой вопрос: почему после внедрения меняется не интерфейс, а сама модель ежедневного управления.</p>
+        </div>
+        <div class="transform__grid">
+          <article class="state-card state-card--chaos">
+            <div class="state-card__top">
+              <p class="state-card__label">До</p>
+              <h3>Операционка живет в голове владельца</h3>
+            </div>
+            <ul class="state-card__list" role="list">
+              <li>Цели и KPI оторваны от ежедневной работы подразделений.</li>
+              <li>Регламенты существуют отдельно от реального исполнения.</li>
+              <li>Контроль строится через постоянные уточнения и ручные сверки.</li>
+              <li>Рост команды увеличивает шум, а не управляемость.</li>
+            </ul>
+          </article>
+          <article class="state-card state-card--system">
+            <div class="state-card__top">
+              <p class="state-card__label">После</p>
+              <h3>Компания работает в единой логике</h3>
+            </div>
+            <ul class="state-card__list" role="list">
+              <li>Цели раскладываются в KPI, роли и точки контроля.</li>
+              <li>Регламенты встроены в ежедневные действия команды.</li>
+              <li>Руководитель видит исполнение в дашбордах, а не собирает его вручную.</li>
+              <li>Обучение и платформа усиливают друг друга, а не дублируются.</li>
+            </ul>
+          </article>
+        </div>
+        <div class="transform__scheme">
+          <div class="transform-step"><strong>1</strong><span>Цели</span></div>
+          <div class="transform-step"><strong>2</strong><span>KPI и роли</span></div>
+          <div class="transform-step"><strong>3</strong><span>Регламенты</span></div>
+          <div class="transform-step"><strong>4</strong><span>Цифровой контроль</span></div>
+        </div>
+        <div class="transform__cta text-center">
+          <a class="btn btn--dark" href="https://my.bbooster.online/training">Посмотреть, как эта модель выглядит в платформе</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="outcomes" aria-labelledby="outcomes-title">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <p class="section-kicker">Что получает компания</p>
+          <h2 id="outcomes-title" class="section-title">Результат не в автоматизации ради автоматизации, а в управляемости бизнеса</h2>
+          <p class="section-lead section-lead--center">После того как логика управления собрана и закреплена в системе, компания получает измеримый эффект в прозрачности, делегировании и масштабировании.</p>
+        </div>
+        <div class="outcomes__grid">
+          <article class="outcome-card"><h3>Прозрачность</h3><p>Показатели и статусы больше не нужно собирать вручную по подразделениям.</p><strong class="card-accent">Результат: решения опираются на цифры, а не на ощущения</strong></article>
+          <article class="outcome-card"><h3>Делегирование</h3><p>Ответственность закреплена в ролях, а не в устных договоренностях и чатах.</p><strong class="card-accent">Результат: меньше возврата задач обратно к собственнику</strong></article>
+          <article class="outcome-card"><h3>Повторяемость</h3><p>Регламенты перестают быть архивом и превращаются в рабочую среду исполнения.</p><strong class="card-accent">Результат: процессы не рассыпаются при росте команды</strong></article>
+          <article class="outcome-card"><h3>Масштабируемость</h3><p>Новые команды и филиалы входят в одну и ту же систему координат.</p><strong class="card-accent">Результат: проще открывать новые направления без потери контроля</strong></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="rollout" aria-labelledby="rollout-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-kicker">Как проходит внедрение</p>
+          <h2 id="rollout-title" class="section-title">Bbooster начинается не с регистрации, а с правильной управленческой логики</h2>
+        </div>
+        <div class="rollout__grid">
+          <article class="rollout-step"><span>Шаг 1</span><h3>Диагностика</h3><p>Понимаем, где именно компания теряет управляемость: в целях, KPI, ролях или регламентах.</p></article>
+          <article class="rollout-step"><span>Шаг 2</span><h3>Сборка модели</h3><p>Определяем архитектуру управления: кто отвечает, что считается результатом и как это измеряется.</p></article>
+          <article class="rollout-step"><span>Шаг 3</span><h3>Цифровой контур</h3><p>Переносим логику в платформу: статусы, дашборды, шаблоны контроля и сценарии работы команды.</p></article>
+          <article class="rollout-step"><span>Шаг 4</span><h3>Закрепление</h3><p>Через обучение и внедрение команда перестает работать в ручном режиме и переходит к системе.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="decision-banner" aria-labelledby="decision-title">
+      <div class="container">
+        <div class="decision-banner__inner">
+          <div class="decision-banner__copy">
+            <p class="section-kicker">Следующий шаг</p>
+            <h2 id="decision-title" class="section-title">Если вы уже понимаете, что проблема не в количестве задач, а в архитектуре управления, не тяните с диагностикой.</h2>
+            <p class="section-lead section-lead--flush">Bbooster имеет смысл тогда, когда компании нужен не очередной сервис, а рабочая модель управления, которую можно внедрить, обучить и удержать в операционке. Если хотите глубже разобраться в подходе, изучите <a href="https://visotsky.com" rel="noopener">методологию Александра Высоцкого</a> и посмотрите практические материалы в <a href="https://blog.bbooster.online">блоге Bbooster</a>.</p>
+          </div>
+          <div class="decision-banner__actions">
+            <a class="btn btn--primary" href="https://my.bbooster.online/program">Пройти диагностику и получить план внедрения</a>
+            <a class="decision-banner__link" href="https://my.bbooster.online">Открыть платформу и изучить среду внедрения</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="navigator navigator--revamp" aria-labelledby="nav-title">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <p class="section-kicker">Продуктовый контур</p>
+          <h2 id="nav-title" class="section-title">Все элементы внедрения собраны в одну экосистему</h2>
+          <p class="section-lead section-lead--center">С разных точек входа Bbooster ведет к одному результату: сделать управление прозрачным, повторяемым и масштабируемым.</p>
+        </div>
+        <div class="nav-cards nav-cards--revamp">
+          <article class="nav-card nav-card--featured">
+            <div class="nav-card__media">
+              <img src="https://fs.gcfiles.net/fileservice/file/download/a/27537/sc/293/h/ab12cb9fa8652f6ca9bba1377696e4b5.webp" width="640" height="480" alt="Визуальный образ платформы Bbooster" loading="lazy" decoding="async">
+              <span class="nav-card__badge">Единая среда</span>
+            </div>
+            <div class="nav-card__body">
+              <p class="nav-card__label">Платформа</p>
+              <h3 class="nav-card__title">my.bbooster.online</h3>
+              <p class="nav-card__text">Единая среда для KPI, ролей, регламентов, контрольных точек и управленческой прозрачности.</p>
+              <p class="nav-card__fit">Подходит, если вам нужен рабочий управленческий контур уже сейчас.</p>
+              <a class="nav-card__link" href="https://my.bbooster.online">Открыть платформу</a>
+            </div>
+          </article>
+          <article class="nav-card">
+            <div class="nav-card__media">
+              <img src="https://fs.gcfiles.net/fileservice/file/download/a/27537/sc/136/h/aecd1f2462c493821490029428f0abcf.webp" width="600" height="400" alt="Сценарии обучения и внедрения Bbooster" loading="lazy" decoding="async">
+              <span class="nav-card__badge">Быстрее адаптация</span>
+            </div>
+            <div class="nav-card__body">
+              <p class="nav-card__label">Обучение</p>
+              <h3 class="nav-card__title">Трек подготовки команды</h3>
+              <p class="nav-card__text">Команда понимает, как работать в новой системе, а не просто получает доступ к новому интерфейсу.</p>
+              <p class="nav-card__fit">Подходит, если нужно быстро выровнять управленческую логику у руководителей и команды.</p>
+              <a class="nav-card__link" href="https://my.bbooster.online/training">Перейти к обучению</a>
+            </div>
+          </article>
+          <article class="nav-card">
+            <div class="nav-card__media">
+              <img src="https://fs.gcfiles.net/fileservice/file/download/a/27537/sc/89/h/51304fa1235d01c995dd28d5c10cd768.webp" width="600" height="400" alt="Диагностика зрелости управления" loading="lazy" decoding="async">
+              <span class="nav-card__badge">Старт без хаоса</span>
+            </div>
+            <div class="nav-card__body">
+              <p class="nav-card__label">Старт</p>
+              <h3 class="nav-card__title">Диагностика и программа внедрения</h3>
+              <p class="nav-card__text">Перед масштабной оцифровкой важно понять, где именно рвется логика управления и почему бизнес зависит от ручного режима.</p>
+              <p class="nav-card__fit">Подходит, если пока неясно, с чего начинать пересборку системы управления.</p>
+              <a class="nav-card__link" href="https://my.bbooster.online/program">Запустить диагностику</a>
+            </div>
+          </article>
+        </div>
+        <div class="navigator__cta text-center">
+          <a class="btn btn--dark" href="https://my.bbooster.online/program">Собрать маршрут внедрения под мою компанию</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="data-compare data-compare--revamp" aria-labelledby="table-title">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <p class="section-kicker">Почему Bbooster сильнее альтернатив</p>
+          <h2 id="table-title" class="section-title">Главное отличие не в наборе функций, а в том, что Bbooster соединяет методологию, обучение и цифровое внедрение</h2>
+          <p class="section-lead section-lead--center">Здесь сравнение не с абстрактными конкурентами, а с теми решениями, которыми бизнес обычно пытается закрыть проблему управления.</p>
+        </div>
+        <div class="compare-signals" role="list" aria-label="Ключевые отличия Bbooster">
+          <article class="compare-signal">
+            <strong>Не только софт</strong>
+            <span>Bbooster объединяет методологию, внедрение и рабочую среду в один продуктовый контур.</span>
+          </article>
+          <article class="compare-signal">
+            <strong>Не только обучение</strong>
+            <span>Команда не просто узнает новую логику, а начинает работать по ней в системе.</span>
+          </article>
+          <article class="compare-signal">
+            <strong>Не только контроль</strong>
+            <span>Собственник получает прозрачность, которая держится не на героизме, а на архитектуре управления.</span>
+          </article>
+        </div>
+        <div class="compare-summary" role="list" aria-label="Итоги сравнения">
+          <article class="compare-summary__card">
+            <strong>Bbooster собирает систему целиком</strong>
+            <p>Цели, KPI, роли, регламенты, обучение и цифровой контур работают как одна логика, а не как набор разрозненных инициатив.</p>
+          </article>
+          <article class="compare-summary__card">
+            <strong>Альтернативы закрывают только фрагмент</strong>
+            <p>Один инструмент усиливает учет, другой обучение, третий экспертизу, но без общего контура бизнес все равно возвращается к ручному управлению.</p>
+          </article>
+          <article class="compare-summary__card">
+            <strong>Ключевая выгода для владельца</strong>
+            <p>Меньше зависимости от личного вмешательства и больше повторяемости управления по мере роста команды и подразделений.</p>
+          </article>
+        </div>
+        <div class="table-wrap">
+          <p class="compare-scroll-hint">Сравнение ниже показывает не только функции, а устойчивость самой модели управления.</p>
+          <table class="compare-table compare-table--revamp">
+            <thead>
+              <tr>
+                <th scope="col">Критерий</th>
+                <th class="compare-table__highlight" scope="col">Bbooster</th>
+                <th scope="col">CRM / ERP без методологии</th>
+                <th scope="col">Таблицы и ручное управление</th>
+                <th scope="col">Консалтинг / COO без цифрового контура</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Что получает бизнес</td>
+                <td class="compare-table__highlight" data-label="Bbooster">Целостную операционную систему: цели, KPI, роли, регламенты, обучение и контроль</td>
+                <td data-label="CRM / ERP без методологии">Инструмент учета и автоматизации отдельных процессов</td>
+                <td data-label="Таблицы и ручное управление">Разрозненные файлы, таблицы и договоренности</td>
+                <td data-label="Консалтинг / COO без цифрового контура">Экспертизу и сопровождение без устойчивой цифровой среды</td>
+              </tr>
+              <tr>
+                <td>Связь стратегии и ежедневной работы</td>
+                <td class="compare-table__highlight" data-label="Bbooster">Есть: цели декомпозируются в KPI и зону ответственности</td>
+                <td data-label="CRM / ERP без методологии">Обычно требует отдельной внешней логики</td>
+                <td data-label="Таблицы и ручное управление">Держится на владельце и ручных договоренностях</td>
+                <td data-label="Консалтинг / COO без цифрового контура">Есть на уровне людей, но сложнее удерживается в масштабе</td>
+              </tr>
+              <tr>
+                <td>Регламенты и стандарты</td>
+                <td class="compare-table__highlight" data-label="Bbooster">Встроены в ежедневное исполнение</td>
+                <td data-label="CRM / ERP без методологии">Хранятся отдельно от фактической работы</td>
+                <td data-label="Таблицы и ручное управление">Быстро устаревают и расходятся с практикой</td>
+                <td data-label="Консалтинг / COO без цифрового контура">Могут быть созданы, но не всегда закрепляются в системе</td>
+              </tr>
+              <tr>
+                <td>Обучение команды</td>
+                <td class="compare-table__highlight" data-label="Bbooster">Входит в общий контур внедрения</td>
+                <td data-label="CRM / ERP без методологии">Чаще всего остается вне продукта</td>
+                <td data-label="Таблицы и ручное управление">Передается хаотично от человека к человеку</td>
+                <td data-label="Консалтинг / COO без цифрового контура">Зависит от конкретного носителя экспертизы</td>
+              </tr>
+              <tr>
+                <td>Масштабирование без собственника</td>
+                <td class="compare-table__highlight" data-label="Bbooster">Высокое: единая логика и единая среда</td>
+                <td data-label="CRM / ERP без методологии">Возможно только при зрелой внутренней методологии</td>
+                <td data-label="Таблицы и ручное управление">Низкое: растут шум, ошибки и ручной контроль</td>
+                <td data-label="Консалтинг / COO без цифрового контура">Среднее: многое держится на отдельных людях</td>
+              </tr>
+              <tr>
+                <td>Почему это важно</td>
+                <td class="compare-table__highlight" data-label="Bbooster">Bbooster не автоматизирует хаос, а перестраивает саму модель управления</td>
+                <td data-label="CRM / ERP без методологии">Автоматизирует то, что уже есть, даже если это неуправляемо</td>
+                <td data-label="Таблицы и ручное управление">Создает ощущение контроля, но не систему</td>
+                <td data-label="Консалтинг / COO без цифрового контура">Помогает выстроить логику, но без платформы ее сложнее удержать</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="data-compare__cta text-center">
+          <a class="btn btn--primary" href="https://my.bbooster.online/program">Понять, подойдет ли Bbooster моей компании</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="seo-power seo-power--alt seo-power--revamp" aria-labelledby="seo-arch-title">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <p class="section-kicker">Архитектура решения</p>
+          <h2 id="seo-arch-title" class="section-title">Почему Bbooster работает там, где отдельный софт или отдельное обучение не дают устойчивого результата</h2>
+        </div>
+        <div class="text-block in-text text-block--narrow">
+          <p>Большинство компаний пытаются закрыть управленческую проблему фрагментами: внедряют CRM, нанимают сильного операционного руководителя, пишут регламенты или отправляют людей на обучение. Но если эти элементы не собраны в одну систему, бизнес продолжает зависеть от ручного контроля. Именно поэтому так важна <a href="https://visotsky.com" rel="noopener">методология управления бизнесом Visotsky</a>, которая задает логику, а не только набор инструментов.</p>
+          <p><strong>Bbooster</strong> работает иначе: сначала появляется логика управления, затем она закрепляется в ролях, KPI и регламентах, после чего получает цифровую среду и поддерживается обучением команды. Именно поэтому продукт полезен не только на старте, но и при масштабировании, а разборы внедрения, кейсы и статьи по регулярному менеджменту собраны в <a href="https://blog.bbooster.online">блоге Bbooster</a>.</p>
+        </div>
+        <div class="architecture-points" role="list" aria-label="Опорные элементы архитектуры Bbooster">
+          <article class="architecture-point">
+            <strong>Сначала логика</strong>
+            <p>Определяем, как компания должна управляться, а не просто где хранить данные.</p>
+          </article>
+          <article class="architecture-point">
+            <strong>Потом цифровой контур</strong>
+            <p>Переносим управленческую логику в среду, где она живет ежедневно, а не в презентациях.</p>
+          </article>
+          <article class="architecture-point">
+            <strong>Затем закрепление</strong>
+            <p>Обучение и практика делают систему устойчивой и снижают возврат к ручному режиму.</p>
+          </article>
+        </div>
+        <blockquote class="method-quote" cite="https://alexvisotsky.com">
+          <p>«Система управления становится устойчивой только тогда, когда цели, роли, регламенты и цифры перестают жить в разных мирах.»</p>
+          <footer>Смысловой тезис по материалам <cite><a href="https://alexvisotsky.com">Александра Высоцкого</a></cite></footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="social-proof social-proof--revamp" aria-labelledby="reviews-title" itemscope itemtype="https://schema.org/Product">
+      <meta itemprop="name" content="Bbooster">
+      <meta itemprop="description" content="Платформа и экосистема системного управления по методологии Александра Высоцкого.">
+      <link itemprop="url" href="https://bbooster.online/">
+      <div itemprop="brand" itemscope itemtype="https://schema.org/Brand">
+        <meta itemprop="name" content="Bbooster">
+      </div>
+      <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+        <meta itemprop="ratingValue" content="4.9">
+        <meta itemprop="bestRating" content="5">
+        <meta itemprop="worstRating" content="1">
+        <meta itemprop="reviewCount" content="186">
+      </div>
+      <div class="container">
+        <div class="section-head section-head--center">
+          <p class="section-kicker">Социальное доказательство</p>
+          <h2 id="reviews-title" class="section-title">Компании замечают не просто интерфейс, а снижение операционного шума</h2>
+          <p class="section-lead section-lead--center">Bbooster ценят за то, что он помогает выстроить порядок: кто за что отвечает, как измеряется результат и где видно исполнение.</p>
+        </div>
+        <div class="proof-strip" role="list" aria-label="Факторы доверия к Bbooster">
+          <article class="proof-strip__item"><strong>4.9 / 5</strong><span>средняя оценка по отзывам</span></article>
+          <article class="proof-strip__item"><strong>186+</strong><span>отзывов и подтвержденных кейсов</span></article>
+          <article class="proof-strip__item"><strong>1 экосистема</strong><span>для внедрения, обучения и цифровой дисциплины</span></article>
+        </div>
+        <div class="proof-note">
+          <p>Для пользователя это означает одну важную вещь: вы получаете не обещание “стало лучше”, а понятный эффект в ритме управления, ролях, KPI и ежедневном исполнении.</p>
+        </div>
+        <div class="review-grid">
+          <article class="review-card" itemprop="review" itemscope itemtype="https://schema.org/Review">
+            <div itemprop="itemReviewed" itemscope itemtype="https://schema.org/SoftwareApplication"><meta itemprop="name" content="Bbooster"><link itemprop="url" href="https://my.bbooster.online"></div>
+            <div class="review-card__top">
+              <div class="review-card__photo"><img src="https://fs.gcfiles.net/fileservice/file/download/a/27537/sc/254/h/9d4ba95fd80e8660a9ad16a55a8e47a6.webp" width="128" height="128" alt="Иллюстрация к отзыву предпринимателя" loading="lazy" decoding="async"></div>
+              <div class="review-card__meta">
+                <p class="review-card__name" itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Предприниматель, сфера услуг</span></p>
+                <p class="review-card__role">Команда 80+ человек</p>
+                <p class="review-card__stars" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating"><meta itemprop="ratingValue" content="5"><meta itemprop="bestRating" content="5">Оценка: 5/5</p>
+              </div>
+            </div>
+            <p itemprop="reviewBody">После фиксации KPI по отделам и переноса регламентов в Bbooster совещания сократились, а прозрачность задач выросла. Руководители перестали работать по ощущениям.</p>
+            <p class="review-card__impact">Эффект: меньше ручных синхронизаций, больше прозрачности по отделам.</p>
+          </article>
+          <article class="review-card" itemprop="review" itemscope itemtype="https://schema.org/Review">
+            <div itemprop="itemReviewed" itemscope itemtype="https://schema.org/SoftwareApplication"><meta itemprop="name" content="Bbooster"><link itemprop="url" href="https://my.bbooster.online"></div>
+            <div class="review-card__top">
+              <div class="review-card__photo"><img src="https://fs.gcfiles.net/fileservice/file/download/a/27537/sc/205/h/8961c8ee83a027dbc673107552d6dfdf.webp" width="128" height="128" alt="Иллюстрация к отзыву владельца бизнеса" loading="lazy" decoding="async"></div>
+              <div class="review-card__meta">
+                <p class="review-card__name" itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Владелец производственной сети</span></p>
+                <p class="review-card__role">Федеральный масштаб</p>
+                <p class="review-card__stars" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating"><meta itemprop="ratingValue" content="5"><meta itemprop="bestRating" content="5">Оценка: 5/5</p>
+              </div>
+            </div>
+            <p itemprop="reviewBody">Раньше все держалось на таблицах и личных чатах. Связка обучения и платформы помогла сделать управление повторяемым, а не героическим.</p>
+            <p class="review-card__impact">Эффект: процессы перестали зависеть от отдельных сильных людей.</p>
+          </article>
+          <article class="review-card" itemprop="review" itemscope itemtype="https://schema.org/Review">
+            <div itemprop="itemReviewed" itemscope itemtype="https://schema.org/SoftwareApplication"><meta itemprop="name" content="Bbooster"><link itemprop="url" href="https://my.bbooster.online"></div>
+            <div class="review-card__top">
+              <div class="review-card__photo"><img src="https://fs.gcfiles.net/fileservice/file/download/a/27537/sc/253/h/7a25aed585f71e2c0ac9af6dd7578616.webp" width="128" height="128" alt="Иллюстрация к отзыву руководителя проектного бизнеса" loading="lazy" decoding="async"></div>
+              <div class="review-card__meta">
+                <p class="review-card__name" itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Руководитель проектного бизнеса</span></p>
+                <p class="review-card__role">IT-интеграции</p>
+                <p class="review-card__stars" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating"><meta itemprop="ratingValue" content="5"><meta itemprop="bestRating" content="5">Оценка: 5/5</p>
+              </div>
+            </div>
+            <p itemprop="reviewBody">Для нас было важно, чтобы цифровой инструмент не жил отдельно от методологии. В Bbooster команда увидела логику, а не просто набор полей и кнопок.</p>
+            <p class="review-card__impact">Эффект: управленческий язык стал единым для всей проектной команды.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section faq-section--revamp" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <p class="section-kicker">FAQ</p>
+          <h2 id="faq-title" class="section-title">Частые вопросы перед запуском внедрения</h2>
+          <p class="section-lead section-lead--center">Короткие ответы на вопросы, которые обычно возникают у собственника или руководителя перед переходом на новую управленческую систему. Для более глубокого погружения используйте <a href="https://blog.bbooster.online">блог Bbooster</a> и материалы про <a href="https://visotsky.com" rel="noopener">систематизацию бизнеса по Visotsky</a>.</p>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item"><summary>Чем Bbooster отличается от обычной CRM?</summary><div class="faq-item__body">CRM автоматизирует процессы учета и взаимодействия. Bbooster закрывает более широкий слой: цели, KPI, роли, регламенты, обучение и управленческий контроль как единую систему.</div></details>
+          <details class="faq-item"><summary>Подойдет ли решение, если процессы уже частично описаны?</summary><div class="faq-item__body">Да. В этом случае задача не начинать с нуля, а собрать разрозненные элементы в единый контур, чтобы процессы действительно работали в ежедневной практике команды.</div></details>
+          <details class="faq-item"><summary>Можно ли внедрять Bbooster поэтапно?</summary><div class="faq-item__body">Да. Обычно разумнее идти поэтапно: сначала прояснить модель управления, затем перенести контроль и роли в платформу, а после закрепить систему через обучение.</div></details>
+          <details class="faq-item"><summary>Что будет главным эффектом для собственника?</summary><div class="faq-item__body">Снижение зависимости бизнеса от ручного участия владельца. Решения начинают опираться на систему, а не на постоянное личное вмешательство в каждую задачу.</div></details>
+          <details class="faq-item"><summary>С чего лучше начинать: с платформы или с диагностики?</summary><div class="faq-item__body">Для большинства компаний разумный старт — диагностика. Она показывает, где именно теряется управляемость и какой маршрут внедрения даст результат без лишних действий.</div></details>
+          <details class="faq-item"><summary>Подойдет ли Bbooster, если у нас уже есть CRM или ERP?</summary><div class="faq-item__body">Да. Bbooster помогает связать цели, KPI, роли, регламенты и управленческий контроль в общую систему исполнения, а не просто добавить еще один интерфейс поверх существующих инструментов.</div></details>
+          <details class="faq-item"><summary>Сколько времени занимает запуск изменений?</summary><div class="faq-item__body">Срок зависит от масштаба компании и текущей зрелости управления. Обычно работа начинается с маршрута внедрения, после чего изменения запускаются поэтапно: диагностика, архитектура, цифровой контур и закрепление.</div></details>
+        </div>
+        <div class="faq-cta text-center">
+          <p class="faq-cta__text">Если после FAQ остался только один вопрос “с чего начать?”, логичный первый шаг уже здесь.</p>
+          <a class="btn btn--dark" href="https://my.bbooster.online/program">Получить маршрут внедрения</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="prefooter-cta" aria-labelledby="prefooter-cta-title">
+      <div class="container">
+        <div class="prefooter-cta__inner">
+          <div class="prefooter-cta__copy">
+            <p class="section-kicker">Финальный шаг</p>
+            <h2 id="prefooter-cta-title" class="section-title">Если хотите расти без ручного режима, начните с диагностики и карты внедрения.</h2>
+            <p class="section-lead section-lead--flush">За один разговор становится понятно, где компании нужен софт, где методология, а где полноценная пересборка управленческого контура.</p>
+          </div>
+          <div class="prefooter-cta__actions">
+            <a class="btn btn--primary" href="https://my.bbooster.online/program">Получить карту внедрения</a>
+            <a class="btn btn--secondary btn--sm" href="https://my.bbooster.online">Открыть Bbooster</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta final-cta--revamp" aria-labelledby="final-cta-title">
+      <div class="final-cta__inner">
+        <p id="final-cta-title" class="final-cta__text">Нужна ясная система управления без ручного хаоса?</p>
+        <a class="btn btn--primary btn--sm" href="https://my.bbooster.online/program">Получить план внедрения</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer__inner">
+      <p class="footer__brand">B<span>b</span>ooster</p>
+      <p class="footer__copyright">© 2026 · Хаб экосистемы · <a href="https://visotsky.com" rel="noopener">Методология Александра Высоцкого</a> · <a href="https://blog.bbooster.online">блог Bbooster</a></p>
+      <nav class="footer__links" aria-label="Нижнее меню">
+        <a href="https://my.bbooster.online">Платформа Bbooster</a>
+        <a href="https://blog.bbooster.online">Блог Bbooster</a>
+        <a href="https://visotsky.com" rel="noopener">Методология Visotsky</a>
+        <a href="https://alexvisotsky.com" rel="noopener">Александр Высоцкий</a>
+      </nav>
+    </div>
+  </footer>
+</body>
 </html>
+
+
